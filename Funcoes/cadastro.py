@@ -2,15 +2,15 @@ import os
 from datetime import datetime
 
 atual=datetime.now()
-estacionamento_att=atual.strftime('%H-%M-%S')+ '.dat'
+estacionamento_att=atual.strftime('%d-%m-%y')+ '.dat'
 
-def cadastro(carros):
+def cadastro(carros=list):
     try:
-        fabricante=input('Fabricante: ')
+        fabricante=input('Fabricante: ').upper().strip()
         os.system("cls")
-        Modelo=input('Modelo Do Veiculo: ')
+        Modelo=input('Modelo Do Veiculo: ').upper().strip()
         os.system("cls")
-        Placa=input('Placa do Veiculo: ')
+        Placa=input('Placa do Veiculo: ').upper().strip()
         os.system("cls")           
         carro={
         'fabricante': fabricante,

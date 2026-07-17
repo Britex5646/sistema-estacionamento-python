@@ -2,6 +2,7 @@ from cadastro import cadastro
 from menu import menu
 from listar import listar
 from saida import saida
+from busca import busca
 carros=[]
 while True:
     alternativa=menu('Digite o que Você deseja: ')
@@ -9,8 +10,10 @@ while True:
         cadastro(carros)
     elif alternativa=='L':
         listar(carros)
+    elif alternativa=="B": 
+         busca(carros)
     elif alternativa=='X':
             saida(carros)
             break
-                             #chame a opcao cadastro com if
+                            #chame a opcao cadastro com if
 

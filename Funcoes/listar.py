@@ -1,5 +1,5 @@
 import os
-carros=[]
+
 def listar(carros):
     os.system("cls")
 
